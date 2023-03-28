@@ -17,13 +17,13 @@
 .product-name {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: 'Lato';
+
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 15px;
     line-height: 25px;
     letter-spacing: 0.0015em;
-    color: #0E161A;
+    color: white;
 
 
 }
@@ -38,7 +38,7 @@
 }
 
 .btn-cart {
-    margin-top:50px ;
+    margin-top: 50px;
     color: #0E161A;
     width: 100%;
     box-sizing: border-box;
