@@ -1,0 +1,19 @@
+.header {
+    margin-top: 2%;
+    height: 80px;
+    background-color: #1C2B35;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    align-items: center;
+}
+.navbar a{
+    font-size: 2rem;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: burlywood;
+}
