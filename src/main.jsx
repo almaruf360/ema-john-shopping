@@ -7,11 +7,33 @@ import {
 } from "react-router-dom";
 import './index.css'
 import Shop from './components/Shop/Shop';
+import Home from './components/Home/Home';
+import Orders from './components/Orders/Orders';
+import Inventory from './components/Inventory/inventory';
+import Login from './components/Login/Login';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Shop></Shop>
+    element: <Home></Home>,
+    children: [
+      {
+        path: '/',
+        element: <Shop></Shop>
+      },
+      {
+        path: 'order',
+        element: <Orders></Orders>
+      },
+      {
+        path: 'inventory',
+        element: <Inventory></Inventory>
+      },
+      {
+        path: 'login',
+        element: <Login></Login>
+      }
+    ]
   }
 ])
 
