@@ -29,7 +29,7 @@ const Cart = ({cart}) => {
 
     return (
         <div className='cart'>
-            <h4>Order Summery</h4>
+            <h4 className='font-bold underline mb-10 text-2xl'>Order Summery</h4>
             <p>Selected Items: {quantity}</p>
             <p>Total Price: ${ total.toFixed(2) }</p>
             <p>Total Shipping: ${ shipping.toFixed(2) }</p>
