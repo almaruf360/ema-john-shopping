@@ -10,4 +10,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-
+.btn-proceed-review{
+    background-color: rgba(255, 255, 0, 0.808);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    
+}
