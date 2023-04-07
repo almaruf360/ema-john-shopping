@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import { addToDb, deleteShoppingCart, getShoppingCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
-import './Shop.css'
+import './Shop.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClipboard} from '@fortawesome/free-solid-svg-icons';
 
 
 const Shop = () => {
@@ -96,9 +98,9 @@ const Shop = () => {
            <Cart cart={cart}
            handleClearCart = {handleClearCart}>
 
-           <Link to="/order"> 
-           <button className='btn-proceed-review'>
-           <span>Review Orders</span>
+           <Link className='proceed-link' to="/order"> 
+           <button className='btn-proceed'>
+           <span>Review Orders  </span> <FontAwesomeIcon icon={faClipboard}/>
            </button>
            </Link>
 
